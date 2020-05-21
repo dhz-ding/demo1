@@ -24,6 +24,12 @@ public class HelloController {
         return "hello world";
     }
 
+    @GetMapping("/fuck")
+    public String fuck(HttpServletRequest request) {
+        logger.info("本次访问ip为："+getIpAddress(request));
+        return "fuck";
+    }
+
     public static String getIpAddress(HttpServletRequest request) {
         String ip = request.getHeader("x-forwarded-for");
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
