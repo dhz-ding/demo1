@@ -44,7 +44,7 @@
     </dependencies>
 
     <build>
-        <finalName>dinghaoze-demo</finalName>
+        <finalName>demo</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
